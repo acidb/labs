@@ -1,0 +1,266 @@
+/* Rotate */
+.tt-ev {
+    position: relative;
+    width: 210px;
+    height: 210px;
+    margin: 10px auto;
+    /*float: right;
+    margin: -4px;
+    padding: 21px 0 0 17px;*/
+    background: url(img/knob-bg.png) center center no-repeat;
+}
+
+.tt-ev-after {
+    position: absolute;
+    z-index: 1;
+    top: 7px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(img/knob-shadow.png) center center no-repeat;
+}
+
+.tt-ev-handle {
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /*background: url(img/knob.png) center center no-repeat;*/
+}
+
+.tt-ev-knob {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+    background: url(img/knob.png) center center no-repeat;
+}
+
+.tt-ev-lbl {
+    position: absolute;
+    top: 50%;
+    left: 105%;
+    height: 24px;
+    margin-top: -12px;
+    line-height: 24px;
+    font-size: 14px;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.75);
+}
+
+.tt-ev-lbl-small {
+    left: 100%;
+    font-size: 12px;
+}
+
+.tt-ev-values {
+    position: relative;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /*top: 13px;
+    left: 13px;
+    width: 84px;
+    height: 84px;*/
+}
+
+.tt-ev-val {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -12px;
+    width: 100%;
+    height: 24px;
+    line-height: 24px;
+    font-family: arial;
+    font-size: 16px;
+    font-weight: bold;
+    color: #a5a5a5;
+    /*text-align: right;*/
+    text-shadow: 1px 1px 1px rgba(255,255,255,0.75);
+}
+
+.tt-ev-val:after
+{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 14px;
+    width: 8px;
+    height: 2px;
+    margin-top: -1px;
+    background: #a5a5a5;
+    box-shadow: 1px 1px 1px rgba(255,255,255,0.75);
+}
+
+.tt-ev-sel
+{
+    color: #3cb4de;
+}
+
+.tt-ev-sel:after
+{
+    background: #3cb4de;
+}
+
+.tt-ev-val .tt-icon
+{
+    position: relative;
+    z-index: 5;
+    cursor: pointer;
+    float: left;
+    width: 19px;
+    height: 16px;
+    margin: -10px -10px -10px -24px;
+    padding:16px 12px 16px 13px;
+}
+.tt-icon-i
+{
+    height:100%;
+}
+
+.tt-ev-val:nth-child(2) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+}
+
+.tt-ev-val:nth-child(2) .tt-icon {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+}
+
+.tt-ev-val:nth-child(3) {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+}
+
+.tt-ev-val:nth-child(3) .tt-icon {
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+}
+
+.tt-ev-val:nth-child(4) {
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+}
+
+.tt-ev-val:nth-child(4) .tt-icon {
+    -webkit-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    -ms-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+}
+
+.tt-ev-val:nth-child(5) {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+}
+
+.tt-ev-val:nth-child(5) .tt-icon {
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+}
+
+/* Icons */
+.tt-card 
+{
+    background: url(img/icon1.png) center center no-repeat;
+}
+.tt-mail
+{
+    background: url(img/icon2.png) center center no-repeat;
+}
+.tt-trash
+{
+    background: url(img/icon3.png) center center no-repeat;
+}
+.tt-square
+{
+    background: url(img/icon4.png) center center no-repeat;
+}
+.tt-phone
+{
+    background: url(img/icon5.png) center center no-repeat;
+}
+
+.tt-ev-sel .tt-card 
+{
+    background: url(img/icon1_a.png) center center no-repeat;
+}
+.tt-ev-sel .tt-mail
+{
+    background: url(img/icon2_a.png) center center no-repeat;
+}
+.tt-ev-sel .tt-trash
+{
+    background: url(img/icon3_a.png) center center no-repeat;
+}
+.tt-ev-sel .tt-square
+{
+    background: url(img/icon4_a.png) center center no-repeat;
+}
+.tt-ev-sel .tt-phone
+{
+    background: url(img/icon5_a.png) center center no-repeat;
+}
+
+/* Icons */
+.tt-card
+{
+    background: url(img/tt-icons.png) 0 0 no-repeat;
+}
+.tt-mail
+{
+    background: url(img/tt-icons.png) -19px 0px no-repeat;
+}
+.tt-trash
+{
+    background: url(img/tt-icons.png) -38px 0px no-repeat;
+}
+.tt-square
+{
+    background: url(img/tt-icons.png) -57px 0px no-repeat;
+}
+.tt-phone
+{
+    background: url(img/tt-icons.png) -76px 0px no-repeat;
+}
+
+.tt-ev-sel .tt-card
+{
+    background: url(img/tt-icons.png) 0px -16px no-repeat;
+}
+
+.tt-ev-sel .tt-mail
+{
+    background: url(img/tt-icons.png) -19px -16px no-repeat;
+}
+.tt-ev-sel .tt-trash
+{
+    background: url(img/tt-icons.png) -38px -16px no-repeat;
+}
+.tt-ev-sel .tt-square
+{
+    background: url(img/tt-icons.png) -57px -16px no-repeat;
+}
+.tt-ev-sel .tt-phone
+{
+    background: url(img/tt-icons.png) -76px -16px no-repeat;
+}

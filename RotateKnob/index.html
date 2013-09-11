@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+
+    <title>Mobiscroll Rotate Knob</title>
+
+    <link href="rotate.css" rel="stylesheet" type="text/css" />
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="rotate.js"></script>
+
+    <script type="text/javascript">
+        $(function () {
+            $('.tt-ev').ttrotate();
+        });
+    </script>
+</head>
+
+<body>
+
+<div style="padding: 30px 0px 20px 0px; border: 2px solid #C7C7C7; border-radius: 20px;">
+    <div class="tt-ev">
+        <input type="hidden" name="hdr_ev" id="hdr_ev" value="1" />
+        <div class="tt-ev-handle">
+            <div class="tt-ev-values">
+                <div class="tt-ev-val" data-val="1"><div class="tt-icon"><div class="tt-icon-i tt-card"></div></div></div>
+                <div class="tt-ev-val" data-val="2"><div class="tt-icon"><div class="tt-icon-i tt-mail"></div></div></div>
+                <div class="tt-ev-val" data-val="3"><div class="tt-icon"><div class="tt-icon-i tt-trash"></div></div></div>
+                <div class="tt-ev-val" data-val="4"><div class="tt-icon"><div class="tt-icon-i tt-square"></div></div></div>
+                <div class="tt-ev-val" data-val="5"><div class="tt-icon"><div class="tt-icon-i tt-phone"></div></div></div>
+            </div>
+        </div>
+        <div class="tt-ev-knob">
+
+        </div>
+        <div class="tt-ev-after"></div>
+    </div>
+</div>
+
+</body>
